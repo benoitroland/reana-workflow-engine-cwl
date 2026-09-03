@@ -277,7 +277,6 @@ class ReanaPipelineJob(JobBase):
         c4p_request_gpus = self._get_hint("c4p_request_gpus")
         c4p_memory_limit = self._get_hint("c4p_memory_limit")
         c4p_notification = self._get_hint("c4p_notification")
-        c4p_email_address = self._get_hint("c4p_email_address")
         c4p_additional_requirements = self._get_hint("c4p_additional_requirements")
         create_body = {
             "image": container,
@@ -306,7 +305,6 @@ class ReanaPipelineJob(JobBase):
             "c4p_request_gpus": c4p_request_gpus,
             "c4p_memory_limit": c4p_memory_limit,
             "c4p_notification": c4p_notification,
-            "c4p_email_address": c4p_email_address,
             "c4p_additional_requirements": c4p_additional_requirements,
         }
 
